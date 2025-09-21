@@ -14,4 +14,10 @@ public class WebController {
         public String showFizzBuzzPage(){
             return "fizzbuzz.html";
         }
+        @GetMapping("/error")
+        public String showErrorPage(){
+            return "error.html";
+        }
 }
+
+
