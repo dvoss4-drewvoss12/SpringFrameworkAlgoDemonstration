@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class FizzBuzz {
+public class fizzbuzz {
     @PostMapping
     public String FizzBuzz(int number) {
         for(int i = 0; i <= number; i++) {
