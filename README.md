@@ -1,0 +1,1 @@
+This is a functional Work-In-Progress website with a working backend and frontend, built with Spring Framework, and Tailwind CSS styling. It demonstrates multiple basic Computer Science Algorithms and displays the results.
