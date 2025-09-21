@@ -6,3 +6,45 @@
 .container {
     padding: 2px 16px;
 }
+.container a{
+    text-decoration: none;
+    color: #333333
+}
+.container a:hover{
+    color: #0077CC;
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+
+}
+.header{
+    background-color: #D1D5DB;
+    padding: 1rem 2rem;
+}
+.header h1{
+    margin-left: 180px;
+}
+.sidenav{
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #D1D5DB;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #005A9C;
+    display: block;
+}
+.sidenav a:hover {
+    color: #0077CC;
+}
+.main{
+    margin-left: 180px;
+    padding: 0px 10px;
+}
