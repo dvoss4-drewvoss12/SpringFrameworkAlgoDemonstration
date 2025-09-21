@@ -1,22 +1,26 @@
 package io.github.dvoss4.algoDemonstration;
 
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class fizzbuzz {
-    @PostMapping
-    public String FizzBuzz(int number) {
+    @PostMapping("/fizzbuzz")
+    public String FizzBuzz(@RequestParam("number") int number) {
+        StringBuilder result = new StringBuilder();
         for(int i = 0; i <= number; i++) {
-            if (number % 3 == 0 && number % 5 == 0) {
-                System.out.println("io.github.dvoss4.algoDemonstration.FizzBuzz");
-            }else if(number % 3 == 0) {
-                System.out.println("Fizz");
+            if (i % 3 == 0 && i % 5 == 0) {
+                result.append("FizzBuzz");
+            }else if(i % 3 == 0) {
+                result.append(("Fizz"));
             }
-            else if(number % 5 == 0) {
-                System.out.println("Buzz");
+            else if(i % 5 == 0) {
+                result.append(("Buzz"));
+            }else{
+                result.append(String.valueOf(i));
             }
         }
-        return "";
+        return result.toString();
     }
 }
