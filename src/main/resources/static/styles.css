@@ -1,15 +1,25 @@
 /* Defining global variables*/
 :root {
-    --sidenav-width: 180px;
-    --textgray: #333333;
+    --sidenav-width: 11.25rem;
+    --color-text: #333333;
+    --color-background: #FDFBF7;
+    --color-primary: #D1D5DB;
+    --sidebar-background: #3f4145;
 }
 body{
+    font-size:1rem;
     margin: 0;
+    line-height:1.6;
     font-family: "Roboto", sans-serif;
 }
+h1,h2,h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+}
 .main{
-    margin-left: 180px;
-    padding: 0 10px;
+    margin-left: var(--sidenav-width);
+    padding: 0 1rem;
 }
 .container {
     display: flex;
@@ -18,13 +28,8 @@ body{
 }
 .container a{
     text-decoration: none;
-    color: var(--textgray);;
-}
-.container a:hover{
-    color: #0077CC;
-    transform: scale(1.05);
-    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
-}
+    color: var(--color-text);;
+}   
 /* Start FizzBuzz Page Formatting*/
 .split-page{
     display: flex;
@@ -33,55 +38,52 @@ body{
 }
 .explanation-column{
     flex: 1;
-    border-left: 1px solid #D1D5DB;
+    border-left: 0.0625rem solid var(--color-primary);
     padding-left: 2rem;
 }
-
 .demo-column{
     flex:1;
 }
 /* End FizzBuzz Page Formatting*/
 /* Start Consistent Page Component Formatting*/
 .header{
-    background-color: #D1D5DB;
+    background-color: var(--color-primary);
     padding: 2rem 1rem;
-    box-shadow: 0    2px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.05);
 }
 .header h1{
-    color: var(--textgray);;
+    color: var(--color-text);;
     font-size: 2.5rem;
     font-weight: 700;
-    margin-left: 180px;
+    margin-left: var(--sidenav-width);
 }
 
 /* sidenav and sidenav components */
 .sidenav{
     height: 100%;
-    width: 180px;
+    width: var(--sidenav-width);
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #3f4145;
+    background-color: var(--sidebar-background);
     overflow-x: hidden;
-    padding-top: 20px;
-    border-right: 1px solid #D1D5DB;
+    padding-top: 1.25rem;
+    border-right: 0.0625rem solid var(--color-primary);
     display: flex;
     flex-direction: column;
 }
-.sidenav-footer{
-    padding-bottom: 20px;
-    margin-top: auto;
-    display: block;
+.sidenav a, .sidenav-footer{
+    padding: 0.375rem 0.5rem 0.375rem 1rem;
     text-decoration: none;
+    font-size: 1.5625rem;
     color: white;
+    display: block;
 }
-.sidenav a{
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
+.sidenav-footer{
+    padding-bottom: 1.25rem;
+    padding-left: 0;
+    margin-top: auto;
 }
 .sidenav-footer a{
     font-size: 1.25rem;
@@ -93,7 +95,7 @@ body{
     width: 70%;
     color:blue;
     height:auto;
-    max-width:150px;
+    max-width:9.375rem;
     display:block;
     margin-left:auto;
     margin-right:auto;
@@ -102,15 +104,21 @@ body{
 .card{
     display: block;
     background-color: #FFFFFF;
-    border: 1px solid #D1D5DB;
+    border: 0.0625rem solid var(--color-primary);
     border-radius: 0.5rem;
     padding: 1.5rem;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.25rem 0.375rem -0.0625rem rgba(0, 0, 0, 0.1);
     text-decoration: none;
-    color: inherit;
+    color: var(--color-text);
     transition: all 0.2s ease-in-out;
     box-sizing: border-box;
     flex: 1 1 100%;
+
+}
+.card:hover{
+    color: #0077CC;
+    transform: scale(1.02);
+    box-shadow: 0 0.625rem 0.9375rem -0.1875rem rgba(0,0,0,0.1);
 }
 .card h2 {
     font-size: 1.75rem;
