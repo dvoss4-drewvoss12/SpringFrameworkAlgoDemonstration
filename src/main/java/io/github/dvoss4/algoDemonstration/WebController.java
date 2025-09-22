@@ -18,6 +18,14 @@ public class WebController {
         public String showErrorPage(){
             return "error";
         }
+        @GetMapping("/about")
+        public String showAboutPage(){
+            return "about";
+        }
+        @GetMapping("/who-am-i")
+        public String showMyPage() {
+            return "whois";
+        }
 }
 
 
