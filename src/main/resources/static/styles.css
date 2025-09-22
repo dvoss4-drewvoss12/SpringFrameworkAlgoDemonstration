@@ -1,7 +1,104 @@
+/* Defining global variables*/
+:root {
+    --sidenav-width: 180px;
+    --textgray: #333333;
+}
 body{
     margin: 0;
     font-family: "Roboto", sans-serif;
 }
+.main{
+    margin-left: 180px;
+    padding: 0 10px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.container a{
+    text-decoration: none;
+    color: var(--textgray);;
+}
+.container a:hover{
+    color: #0077CC;
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+}
+/* Start FizzBuzz Page Formatting*/
+.split-page{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+.explanation-column{
+    flex: 1;
+    border-left: 1px solid #D1D5DB;
+    padding-left: 2rem;
+}
+
+.demo-column{
+    flex:1;
+}
+/* End FizzBuzz Page Formatting*/
+/* Start Consistent Page Component Formatting*/
+.header{
+    background-color: #D1D5DB;
+    padding: 2rem 1rem;
+    box-shadow: 0    2px 4px rgba(0, 0, 0, 0.05);
+}
+.header h1{
+    color: var(--textgray);;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-left: 180px;
+}
+
+/* sidenav and sidenav components */
+.sidenav{
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #3f4145;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-right: 1px solid #D1D5DB;
+    display: flex;
+    flex-direction: column;
+}
+.sidenav-footer{
+    padding-bottom: 20px;
+    margin-top: auto;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.sidenav a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+}
+.sidenav-footer a{
+    font-size: 1.25rem;
+}
+.sidenav a:hover {
+    color: #0077CC;
+}
+.sidenav-logo{
+    width: 70%;
+    color:blue;
+    height:auto;
+    max-width:150px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+/* Card styling*/
 .card{
     display: block;
     background-color: #FFFFFF;
@@ -23,67 +120,4 @@ body{
     font-size: 1rem;
     color: #555555;
 }
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-.container a{
-    text-decoration: none;
-    color: #333333
-}
-.container a:hover{
-    color: #0077CC;
-    transform: scale(1.05);
-    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
-}
-.header{
-    background-color: #D1D5DB;
-    padding: 2rem 1rem;
-    box-shadow: 0    2px 4px rgba(0, 0, 0, 0.05);
-}
-.header h1{
-    color: #333333;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-left: 180px;
-}
-.sidenav{
-    height: 100%;
-    width: 180px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #3f4145;
-    overflow-x: hidden;
-    padding-top: 20px;
-    border-right: 1px solid #D1D5DB;
-}
-.sidenav a{
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-}
-.sidenav a:hover {
-    color: #0077CC;
-}
-.main{
-    margin-left: 180px;
-    padding: 0 10px;
-}
-.split-page{
-    display: flex;
-    gap: 2rem;
-    padding: 2rem;
-}
-.explanation-column{
-    flex: 1;
-    border-left: 1px solid #D1D5DB;
-    padding-left: 2rem;
-}
-.demo-column{
-    flex:1;
-}
+/* End Consistent Page Component Formatting*/
