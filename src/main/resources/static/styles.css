@@ -72,5 +72,18 @@ body{
 }
 .main{
     margin-left: 180px;
-    padding: 0px 10px;
+    padding: 0 10px;
+}
+.split-page{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+.explanation-column{
+    flex: 1;
+    border-left: 1px solid #D1D5DB;
+    padding-left: 2rem;
+}
+.demo-column{
+    flex:1;
 }
