@@ -13,6 +13,9 @@
         <a href="https://www.linkedin.com/in/dvoss4/">My Linkedin</a>
     </footer>
 </div>
-
+<a th:fragment="algocard(lnk, title, desc)" th:href="@{${lnk}}" class="card">
+    <h2 th:text="${title}">Card Title</h2>
+    <p th:text="${desc}">Card Description</p>
+</a>
 </body>
 </html>

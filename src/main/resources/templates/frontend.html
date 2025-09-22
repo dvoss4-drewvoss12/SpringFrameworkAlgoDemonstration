@@ -16,10 +16,10 @@
 
 <div class="main">
     <div class="container">
-        <a th:href="@{/fizzbuzz}" class="card">
-            <h2>Fizz Buzz Algorithm</h2>
-            <p>The classic FizzBuzz algorithm, returns fizz for a multiple of three. Buzz for a multiple of Five. FizzBuzz for multiples of both </p>
-        </a>
+        <div th:replace ="~{fragments :: algocard(
+        lnk='/fizzbuzz',
+        title='Fizz Buzz Algorithm',
+        desc='The classic algorithm that returns Fizz for multiples of three and Buzz for multiples of five.')}"></div>
     </div>
 </div>
 </body>
