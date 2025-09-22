@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    font-family: "Roboto Light", serif;
+    font-family: "Roboto", sans-serif;
 }
 .card{
     display: block;
@@ -40,9 +40,10 @@ body{
 .header{
     background-color: #D1D5DB;
     padding: 2rem 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0    2px 4px rgba(0, 0, 0, 0.05);
 }
 .header h1{
+    color: #333333;
     font-size: 2.5rem;
     font-weight: 700;
     margin-left: 180px;
