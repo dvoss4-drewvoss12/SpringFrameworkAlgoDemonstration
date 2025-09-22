@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" th:href="@{/DVLogo.svg}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Algorithm Demonstrations</title>
+    <link rel="stylesheet" th:href="@{/styles.css}">
+</head>
+<body>
+<header class="header"><h1>Algorithms!</h1></header>
+
+<div th:replace="~{fragments :: sidenav}"></div>
+
+<div class="main">
+    <div class="container">
+        <a th:href="@{/fizzbuzz}" class="card">
+            <h2>Fizz Buzz Algorithm</h2>
+            <p>The classic FizzBuzz algorithm, returns fizz for a multiple of three. Buzz for a multiple of Five. FizzBuzz for multiples of both </p>
+        </a>
+    </div>
+</div>
+</body>
+</html>

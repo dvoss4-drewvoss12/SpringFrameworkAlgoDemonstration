@@ -8,15 +8,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class WebController {
         @RequestMapping("/")
         public String showHomePage(){
-            return "frontend.html"; // look for frontend.html
+            return "frontend"; // look for frontend.html
         }
-        @GetMapping("/fizzbuzz-algo")
+        @GetMapping("/fizzbuzz")
         public String showFizzBuzzPage(){
-            return "fizzbuzz.html";
+            return "fizzbuzz";
         }
         @GetMapping("/error")
         public String showErrorPage(){
-            return "error.html";
+            return "error";
         }
 }
 
